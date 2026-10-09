@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">yezhennan2024110543exp02</string>
+    <string name="add_text_view_btn">添加Text view</string>
+    <string name="text_view_example">Text view %1$d</string>
+    <string name="btn_find_adviser">确定</string>
+    <string name="result_default">…</string>
+    <string name="result_prefix">结果:</string>
+    <string name="label_select_program">选择程序</string>
+
+    <string-array name="program_types">
+        <item>Web 开发</item>
+        <item>移动应用开发</item>
+        <item>数据科学 / AI</item>
+        <item>系统 / 底层编程</item>
+    </string-array>
+
+    <string-array name="advise_web">
+        <item>JavaScript</item>
+        <item>TypeScript</item>
+        <item>HTML/CSS</item>
+        <item>Python</item>
+    </string-array>
+
+    <string-array name="advise_mobile">
+        <item>Kotlin (Android)</item>
+        <item>Swift (iOS)</item>
+        <item>Flutter</item>
+    </string-array>
+
+    <string-array name="advise_data_ai">
+        <item>Python</item>
+        <item>R</item>
+        <item>Julia</item>
+        <item>SQL</item>
+    </string-array>
+
+    <string-array name="advise_system">
+        <item>C</item>
+        <item>C++</item>
+        <item>Rust</item>
+        <item>Go</item>
+    </string-array>
+
+    <string-array name="advise_default">
+        <item>建议从 Python 或 JavaScript 开始</item>
+    </string-array>
+
+</resources>
