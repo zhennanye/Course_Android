@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">MultiActivity</string>
+
+    <string name="btn_activity1">启动Activity1（传参）</string>
+    <string name="btn_activity2">启动Activity2（返回结果）</string>
+    <string name="btn_activity3">启动Activity3（拍照）</string>
+    <string name="btn_activity4">启动Activity4（秒表）</string>
+    <string name="tv_result_prefix">返回结果：</string>
+    <string name="tv_no_result">暂无返回结果</string>
+
+    <string name="title_activity1">Activity1 - 接收参数</string>
+    <string name="tv_received_prefix">接收到的参数：</string>
+    <string name="param_key">param_key</string>
+    <string name="param_value">Hello from MainActivity!</string>
+
+    <string name="title_activity2">Activity2 - 输入并返回</string>
+    <string name="hint_input">请输入要返回的内容</string>
+    <string name="btn_confirm">确定返回</string>
+    <string name="result_key">result_key</string>
+
+    <string name="title_activity3">Activity3 - 调用相机</string>
+    <string name="btn_take_photo">拍照</string>
+    <string name="iv_desc">照片预览</string>
+    <string name="toast_photo_success">拍照成功</string>
+    <string name="toast_photo_fail">拍照失败</string>
+
+    <string name="title_activity4">Activity4 - 秒表</string>
+    <string name="btn_start">开始</string>
+    <string name="btn_pause">暂停</string>
+    <string name="btn_reset">重置</string>
+    <string name="tv_time_default">00:00:00.000</string>
+    <string name="state_elapsed">elapsed</string>
+    <string name="state_running">running</string>
+</resources>
