@@ -1,6 +1,8 @@
 package com.yezhennan.exp03
 
 import android.os.Bundle
+import android.view.Gravity
+import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.activity.ComponentActivity
@@ -23,7 +25,13 @@ class Activity1 : ComponentActivity() {
         val root = LinearLayout(this)
         root.orientation = LinearLayout.VERTICAL
 
-        val tv = TextView(this)
+        val tv = TextView(this).apply {
+            layoutParams = LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+            )
+            gravity = Gravity.CENTER
+        }
 
         val param = intent.getStringExtra(getString(R.string.param_key))
 

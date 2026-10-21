@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">exp04</string>
+    <string name="btnEdit_text">修改个人信息</string>
+    <string name="btnGame_text">开始翻牌游戏</string>
+    <string name="etName_text">姓名</string>
+    <string name="rbMale_text">男</string>
+    <string name="rbFemale_text">女</string>
+    <string name="etPhone_text">电话</string>
+    <string name="btnSave_text">保存</string>
+    <string name="btnRestart_text">重新开始</string>
+    <string name="label_name">姓名：%1$s</string>
+    <string name="label_gender">性别：%1$s</string>
+    <string name="label_phone">电话：%1$s</string>
+    <string name="label_score">当前得分：%1$d</string>
+</resources>
