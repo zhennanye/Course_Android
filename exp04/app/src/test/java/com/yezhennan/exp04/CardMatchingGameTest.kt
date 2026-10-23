@@ -8,27 +8,6 @@ import org.junit.Test
 class CardMatchingGameTest {
 
     @Test
-    fun testCardMatchSameRank() {
-        val a = Card("♥", "A")
-        val b = Card("♠", "A")
-        assertEquals(4, a.match(arrayOf(b)))
-    }
-
-    @Test
-    fun testCardMatchSameSuit() {
-        val a = Card("♥", "A")
-        val b = Card("♥", "K")
-        assertEquals(1, a.match(arrayOf(b)))
-    }
-
-    @Test
-    fun testCardNoMatch() {
-        val a = Card("♥", "A")
-        val b = Card("♠", "K")
-        assertEquals(0, a.match(arrayOf(b)))
-    }
-
-    @Test
     fun testChooseCardDeductsCost() {
         val game = CardMatchingGame(4)
         val before = game.score
@@ -50,4 +29,31 @@ class CardMatchingGameTest {
         val game = CardMatchingGame(10)
         assertEquals(10, game.cardCount())
     }
+    @Test
+    fun testResetClearsMatchedAndScore() {
+        val game = CardMatchingGame(12)
+        game.chooseCardAtIndex(0)
+        game.reset(12)
+        assertEquals(0, game.score)
+        assertTrue(game.cardAtIndex(0).isChosen.not())
+    }
+
+    @Test
+    fun testThreeSameSuitMatch() {
+        val a = Card("♥", "A"); val b = Card("♥", "K"); val c = Card("♥", "Q")
+        assertEquals(8, c.match(arrayOf(a, b)))
+    }
+
+    @Test
+    fun testThreeSameRankMatch() {
+        val a = Card("♥", "A"); val b = Card("♠", "A"); val c = Card("♦", "A")
+        assertEquals(8, c.match(arrayOf(a, b)))
+    }
+
+    @Test
+    fun testThreeNoMatch() {
+        val a = Card("♥", "A"); val b = Card("♠", "K"); val c = Card("♦", "Q")
+        assertEquals(0, c.match(arrayOf(a, b)))
+    }
+
 }

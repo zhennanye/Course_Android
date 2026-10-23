@@ -12,4 +12,8 @@
     <string name="label_gender">性别：%1$s</string>
     <string name="label_phone">电话：%1$s</string>
     <string name="label_score">当前得分：%1$d</string>
+    <string name="restart_text">重新开始</string>
+    <string name="about_text">翻牌游戏 v2.0\n实验五</string>
+    <string name="aboutBtn_text">关于</string>
+    <string name="confirm_text">确定</string>
 </resources>

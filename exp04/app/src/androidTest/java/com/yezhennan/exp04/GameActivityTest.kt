@@ -6,6 +6,7 @@ import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.yezhennan.exp04.controller.GameActivity
 import org.junit.Test
 import org.junit.runner.RunWith
 
@@ -18,7 +19,7 @@ class GameActivityTest {
             onView(withId(R.id.tvScore)).check(matches(isDisplayed()))
             onView(withId(R.id.tvHighScore)).check(matches(isDisplayed()))
             onView(withId(R.id.btnRestart)).check(matches(isDisplayed()))
-            onView(withId(R.id.gridCards)).check(matches(isDisplayed()))
+            onView(withId(R.id.recyclerCards)).check(matches(isDisplayed()))
         }
     }
 
