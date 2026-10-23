@@ -23,10 +23,12 @@ class CardView @JvmOverloads constructor(
                 text = card.toString()
                 isEnabled = false
                 setBackgroundColor(Color.LTGRAY)
+                setTextColor(Color.GRAY)
             }
             card.isChosen -> {
                 text = card.toString()
                 setBackgroundColor("#BB66BB".toColorInt())
+                setTextColor(Color.RED)
             }
             else -> {
                 text = "?"
@@ -34,5 +36,10 @@ class CardView @JvmOverloads constructor(
                 setTextColor(Color.WHITE)
             }
         }
+    }
+
+    override fun onMeasure(widthSpec: Int, heightSpec: Int) {
+        super.onMeasure(widthSpec, heightSpec)
+        setMeasuredDimension(measuredWidth, (measuredWidth * 1.618).toInt())
     }
 }
