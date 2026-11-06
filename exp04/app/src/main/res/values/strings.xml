@@ -16,4 +16,8 @@
     <string name="about_text">翻牌游戏 v2.0\n实验五</string>
     <string name="aboutBtn_text">关于</string>
     <string name="confirm_text">确定</string>
+    <string name="profile_fragment">个人信息</string>
+    <string name="two_card_fragment">2张牌翻牌游戏</string>
+    <string name="three_card_fragment">3张牌翻牌游戏</string>
+    <string name="label_high_score">最高得分：%1$d</string>
 </resources>

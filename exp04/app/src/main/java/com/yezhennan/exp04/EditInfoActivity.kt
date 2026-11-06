@@ -32,6 +32,7 @@ class EditInfoActivity : AppCompatActivity() {
             PlayerInfo.name = name
             PlayerInfo.phone = phone
             PlayerInfo.gender = if (rgGender.checkedRadioButtonId == R.id.rbMale) "男" else "女"
+            AppStorage.save(this, "player_profile.dat", PlayerInfo.snapshot())
             Toast.makeText(this, "修改成功", Toast.LENGTH_SHORT).show()
             finish()
         }

@@ -13,43 +13,12 @@
 
     </androidx.appcompat.widget.Toolbar>
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/tvName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:padding="6dp"/>
-
-    <TextView
-        android:id="@+id/tvGender"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:padding="6dp"/>
-
-    <TextView
-        android:id="@+id/tvPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:padding="6dp"/>
-
-    <TextView
-        android:id="@+id/tvHighScore"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:padding="6dp"/>
-
-    <Button
-        android:id="@+id/btnEdit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btnEdit_text"/>
-
-    <Button
-        android:id="@+id/btnGame"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/btnGame_text"/>
+    <FrameLayout android:id="@+id/fragmentContainer" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1"/>
+    <Button android:id="@+id/btnProfile" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="@string/profile_fragment"/>
+    <Button android:id="@+id/btnTwoCards" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="@string/two_card_fragment"/>
+    <Button android:id="@+id/btnThreeCards" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:text="@string/three_card_fragment"/>
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,51 +1,39 @@
 package com.yezhennan.exp04
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import com.yezhennan.exp04.controller.GameActivity
+import androidx.fragment.app.Fragment
+import com.yezhennan.exp04.fragment.ProfileFragment
+import com.yezhennan.exp04.fragment.ThreeCardFragment
+import com.yezhennan.exp04.fragment.TwoCardFragment
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var tvName: TextView
-    private lateinit var tvGender: TextView
-    private lateinit var tvPhone: TextView
-    private lateinit var tvHighScore: TextView
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
         setSupportActionBar(findViewById(R.id.toolbar))
 
-        tvName = findViewById(R.id.tvName)
-        tvGender = findViewById(R.id.tvGender)
-        tvPhone = findViewById(R.id.tvPhone)
-        tvHighScore = findViewById(R.id.tvHighScore)
-
-        findViewById<Button>(R.id.btnEdit).setOnClickListener {
-            startActivity(Intent(this, EditInfoActivity::class.java))
+        if (savedInstanceState == null) {
+            showFragment(ProfileFragment())
         }
-        findViewById<Button>(R.id.btnGame).setOnClickListener {
-            startActivity(Intent(this, GameActivity::class.java))
+        findViewById<android.view.View>(R.id.btnProfile).setOnClickListener {
+            showFragment(ProfileFragment())
+        }
+        findViewById<android.view.View>(R.id.btnTwoCards).setOnClickListener {
+            showFragment(TwoCardFragment())
+        }
+        findViewById<android.view.View>(R.id.btnThreeCards).setOnClickListener {
+            showFragment(ThreeCardFragment())
         }
     }
 
-    override fun onResume() {
-        super.onResume()
-        refresh()
-    }
-
-    private fun refresh() {
-        tvName.text = getString(R.string.label_name, PlayerInfo.name)
-        tvGender.text = getString(R.string.label_gender, PlayerInfo.gender)
-        tvPhone.text = getString(R.string.label_phone, PlayerInfo.phone)
-        tvHighScore.text = getString(R.string.label_score, PlayerInfo.highScore)
+    private fun showFragment(fragment: Fragment) {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragmentContainer, fragment)
+            .commit()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
