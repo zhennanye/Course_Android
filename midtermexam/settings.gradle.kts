@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "midterm-exam"
+rootProject.name = "yezhennan-book-manager"
 include(":app")

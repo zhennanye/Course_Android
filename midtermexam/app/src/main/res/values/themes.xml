@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme.Midtermexam" parent="android:Theme.Material.Light.NoActionBar" />
+    <style name="Theme.Midtermexam" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:textColor" type="color">@color/green</item>
+    </style>
 </resources>
