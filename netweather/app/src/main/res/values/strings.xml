@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">net-weather</string>
+    <string name="weather_title">天气预报</string>
+    <string name="search_city">搜索城市</string>
+    <string name="loading_city_list">正在读取城市列表…</string>
+    <string name="city_list_empty_error">城市列表中没有可用的城市数据</string>
+    <string name="city_file_read_error">读取本地城市文件失败：%1$s</string>
+    <string name="city_file_parse_error">解析本地城市文件失败：%1$s</string>
+    <string name="file_unavailable">文件不可用</string>
+    <string name="invalid_json">JSON 格式错误</string>
+    <string name="weather_service_unavailable">天气服务暂时无法提供数据</string>
+    <string name="weather_parse_error">天气数据解析失败：%1$s</string>
+    <string name="weather_request_error">天气请求失败，请检查网络连接后重试</string>
+    <string name="no_matching_cities">没有找到匹配的城市</string>
+    <string name="back">返回</string>
+    <string name="loading_weather">正在获取天气…</string>
+    <string name="weather_icon_description">天气状况图标</string>
+    <string name="value_unavailable">--</string>
+    <string name="temperature_value">%1$s°C</string>
+    <string name="weather_information">天气信息</string>
+    <string name="humidity_value">湿度：%1$s</string>
+    <string name="air_quality_value">空气质量：%1$s</string>
+    <string name="air_particles_value">PM2.5：%1$s    PM10：%2$s</string>
+    <string name="life_advice">生活提示：%1$s</string>
+    <string name="future_weather">未来天气</string>
+    <string name="no_forecast">暂无预报信息</string>
+    <string name="forecast_date_week">%1$s  %2$s</string>
+    <string name="weather_unknown">天气未知</string>
+    <string name="temperature_range">%1$s / %2$s</string>
+    <string name="wind_value">风向：%1$s  %2$s</string>
+    <string name="retry">重试</string>
+</resources>
